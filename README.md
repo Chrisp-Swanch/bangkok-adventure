@@ -1,4 +1,4 @@
-# Boilerplate: Phase 1
+# Amanda, Chris, Kane, Oscar
 
 ## Setup
 
