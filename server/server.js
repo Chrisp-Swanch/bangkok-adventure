@@ -16,24 +16,4 @@ server.use('/', routes)
 const publicFolder = __dirname + '/public'
 server.use(express.static(publicFolder))
 
-server.get('/', (req, res) => {
-  res.render('home')
-})
-
-server.get('/game', (req, res) => {
-  fs.readFile(__dirname + '/data/story.JSON')
-    .then((storyString) => {
-      return JSON.parse(storyString)
-    })
-  res.render('game')
-})
-
-server.post('/game', (req, res) => {
-
-})
-
-server.get('result', (req, res) => {
-
-})
-
 module.exports = server
