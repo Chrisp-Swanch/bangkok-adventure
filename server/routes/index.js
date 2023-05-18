@@ -19,7 +19,7 @@ router.get('/home', (req, res) => {
 })
 
 router.get('/game', (req, res) => {
-  fs.readFile(__dirname + '/data/story.JSON')
+  fs.readFile('server/data/story.JSON')
     .then((storyString) => {
       return JSON.parse(storyString)
     })
@@ -27,6 +27,7 @@ router.get('/game', (req, res) => {
       res.render('game', storyObj)
     })
 })
+
 
 router.post('/game', (req, res) => {
   const buttonClicked = req.body.SOMETHING
