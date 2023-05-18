@@ -1,4 +1,4 @@
-# Amanda, Chris, Kane, Oscar
+# Amanda, Chris, Kayne, Oscar
 
 ## Setup
 
