@@ -11,7 +11,7 @@
     ]
   },
   {
-    "route": "/",
+    "id": "/",
     "image": "/images/bangkok.png",
     "text": "You awaken to the sound of a dripping tap. Your head is pounding from what you can only assume was a night of heavy drinking, though the last thing you remember was walking towards JJ Murphy's after class on Friday.<br> <br>Your heavy eyes open, and fill with the stinging light streaming from a nearby window. But what's this? This is not a room you recognise. In place of a soft mattress is the cold hotel bathroom floor you passed out on. You stumble towards the window and see the vast city of Bangkok, Thailand, stretching out beyond the horizon.<br> <br>Confusion and panic sets in. You feel nauseous. What do you do?",
     "options": [
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "route": "/call-mum",
+    "id": "/call-mum",
     "image": "/images/phone.jpeg",
     "text": "You feel around for your phone. You breathe a sigh of relief when you find it in your back pocket. The screen is cracked. Also you're not sure if these are your pants or not.<br> <br>The phone flickers to life. You call your Mum. You hear an ominous beeping sound- the call didn't connect, as you're not on a Thai cell network. The phone dies.<br> <br>You begin to despair. What do you do now?",
     "options": [
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "route": "/drink-water",
+    "id": "/drink-water",
     "image": "/images/water.jpeg",
     "text": "The cold water feels amazing on your parched lips, and brings some relief to your splitting headache. You feel refreshed and energised. But it does not solve your predicament. Your mind turns towards getting home.<br> <br>What is your first move?",
     "options": [
@@ -57,7 +57,7 @@
     ]
   },
   {
-    "route": "/shower",
+    "id": "/shower",
     "image": "/images/hotel-room",
     "text": "You have a very pleasant and much-needed shower. After filling your pockets with the free soaps, you leave the bathroom and are met with a chaotic scene. The room is trashed, but your eyes are drawn to a bowl of chips on the coffee table.<br> <br>Hunger gnaws, and you consider snacking on these before continuting on your quest. What do you do?",
     "options": [
@@ -73,7 +73,7 @@
     ]
   },
   {
-    "route": "/look-for-elevator",
+    "id": "/look-for-elevator",
     "image": "/images/old-lady.png",
     "text": "You go out to the hallway and get your bearings, but the hall seems to continue far in each direction.<br> <br>Suddenly an old lady approaches you. She seems distressed, and she tells you that she can't find her room. Something is off about her, but you can't quite think of why. It could just be your hangover and bodily exhaustion, or perhaps your intuition is on to something?<br> <br>How do you respond?",
     "options": [
@@ -89,7 +89,7 @@
     ]
   },
   {
-    "route": "/elevator",
+    "id": "/elevator",
     "image": "/images/elevator.jpeg",
     "text": "You point along the hallway, and notice the silver doors of the elevator up ahead of you. The old lady gives you a kindly smile and wanders off.<br> <br>You go to the elevator, intent on getting out of the building as quickly as possible. Which floor do you choose?",
     "options": [
@@ -104,7 +104,7 @@
     ]
   },
   {
-    "route": "/basement",
+    "id": "/basement",
     "image": "/images/speakeasy.jpeg",
     "text": "The elevator trundles down to the basement. To your surprise, the doors open to a dimly-lit speakeasy, where sharp-dressed patrons are shooting pool and smoking cigars.<br> <br>A man with a large scar accross his face approaches you. He is very intimidating, and the smoke in the room is making your headache worsen. How do you proceed?",
     "options": [
@@ -120,7 +120,7 @@
     ]
   },
   {
-    "route": "/fight",
+    "id": "/fight",
     "image": "/images/fight.jpeg",
     "text": "The scar-faced man appears fired up by your challenge. Before you finish your sentence, you've been knocked to the ground. Writhing in pain, you stagger to your feet and face your opponent.<br> <br>The bar manager approaches in a fury. What do you do?",
     "options": [
@@ -136,7 +136,7 @@
     ]
   },
   {
-    "route": "/elevator-again",
+    "id": "/elevator-again",
     "image": "/images/elevator.jpeg",
     "text": "You strike at the assailant, but your hit is deflected. The scar-faced man knocks you back, and you fall into the elevator. The doors close on you.<br> <br>Where do you go now?",
     "options": [
@@ -152,7 +152,7 @@
     ]
   },
   {
-    "route": "/ground-floor",
+    "id": "/ground-floor",
     "image": "/images/street.png",
     "text": "The elevator travels slowly to the ground floor, where you enter the lobby. You look around in a daze for the exit, and make your way out to the street.<br> <br>The bustling street noise and the bright light is overwhelming. your eyes sting. You don't know where you're going, but you can smell food somewhere in the distance. Which way do you go?",
     "options": [
@@ -168,7 +168,7 @@
     ]
   },
   {
-    "route": "/van",
+    "id": "/van",
     "image": "/images/van.jpeg",
     "text": "You turn right and stagger along the street. Out of the shadows, two masked figures approach you and push you into a waiting van. You are terrified and confused.<br> <br>The van drives off at speed. What do you do?",
     "options": [
@@ -184,7 +184,7 @@
     ]
   },
   {
-    "route": "/win",
+    "id": "/win",
     "image": "/images/mum.jpeg", 
     "text": "The driver turns and unmasks themself. To your amazement, it is your Mum. She explains that she's come to pick you up and take you back home to sober up.<br> <br>She goes on to say that you are a wanted criminal in Thailand due to your drunken antics, hence the discreet kidnap-style rescue, but that she still loves you despite your unspeakable crimes.<br> <br>One of her hired henchmen hands you a biscuit.<br> <br>Congratulations, you win!",
     "options": [
