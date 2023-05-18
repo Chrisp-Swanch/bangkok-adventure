@@ -2,5 +2,3 @@ const express = require('express')
 const router = express.Router()
 const fs = require('fs').promises
 
-
-router.get('/', (req, res) => {
