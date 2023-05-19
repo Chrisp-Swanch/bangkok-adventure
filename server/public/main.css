@@ -1,7 +1,7 @@
 body {
   background-color: #000000;
   color: #FFFFFF;
-  font-family: monospace, cursive;
+  font-family: 'monospace'
 }
 .start-screen {
 text-align: center;
@@ -11,12 +11,17 @@ text-align: center;
 
 
 .container {
+  margin-top: 7.5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-
+.question {
+  text-align: center;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
 
 
 /* .app {
@@ -45,6 +50,7 @@ text-align: center;
 
 
 .button {
+  font-size: 1rem;
   border-style: solid;
   border-width: 3px;
   border-color:rgba(247, 204, 251, .8);
@@ -54,7 +60,8 @@ text-align: center;
   text-decoration: none;
   margin: 18px;
   display: inline-block;
-  color:#FFFFFF
+  color:#FFFFFF;
+  font-family: 'monospace'
 }
 
 .button:link {
