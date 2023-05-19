@@ -45,7 +45,7 @@ router.get('/end', (req, res) => {
     })
     .then((page) => {
       console.log(page)
-      res.render('game', page)
+      res.render('end', page)
     })
 })
 
