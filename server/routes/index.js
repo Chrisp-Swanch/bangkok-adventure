@@ -29,6 +29,26 @@ router.get('/game', (req, res) => {
 })
 
 // game page routes
+router.get('/end', (req, res) => {
+  console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
+})
+
 router.get('/call-mum', (req, res) => {
   console.log(req.route.path)
 
@@ -50,6 +70,186 @@ router.get('/call-mum', (req, res) => {
 })
 
 router.get('/drink-water', (req, res) => {
+  console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
+})
+
+router.get('/shower', (req, res) => {
+  console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
+})
+
+router.get('/look-for-elevator', (req, res) => {
+  console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
+})
+
+router.get('/elevator', (req, res) => {
+  console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
+})
+
+router.get('/basement', (req, res) => {
+  console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
+})
+
+router.get('/fight', (req, res) => {
+  console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
+})
+
+router.get('/elevator-again', (req, res) => {
+  console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
+})
+
+router.get('/ground-floor', (req, res) => {
+  console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
+})
+
+router.get('/van', (req, res) => {
+  console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
+})
+
+router.get('/win', (req, res) => {
   console.log(req.route.path)
 
   const string = req.route.path
