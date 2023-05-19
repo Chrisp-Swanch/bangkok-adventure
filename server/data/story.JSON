@@ -28,7 +28,7 @@
     "text": "You feel around for your phone. You breathe a sigh of relief when you find it in your back pocket. The screen is cracked. Also you're not sure if these are your pants or not.   The phone flickers to life. You call your Mum. You hear an ominous beeping sound- the call didn't connect, as you're not on a Thai cell network. The phone dies.   You begin to despair. What do you do now?",
     "button1-text": "Try the hotel room phone",
     "button1-link": "/end",
-    "death-message": "You leave the bathroom and immediately trip up on your shoelaces. You died.",
+    "deathMessage": "You leave the bathroom and immediately trip up on your shoelaces. You died.",
 
     "button2-text": "Give up and take a shower",
     "button2-link": "/shower"
@@ -50,7 +50,7 @@
     "text": "You have a very pleasant and much-needed shower. After filling your pockets with the free soaps, you leave the bathroom and are met with a chaotic scene. The room is trashed, but your eyes are drawn to a bowl of chips on the coffee table.   Hunger gnaws, and you consider snacking on these before continuting on your quest. What do you do?",
     "button1-text": "Eat the leftover chips",
     "button1-link": "/end",
-    "death-message": "These chips are disgusting. They've clearly been sitting here for a good few hours and they're very stale, and weirdly soggy from the high humidity. You died.",
+    "deathMessage": "These chips are disgusting. They've clearly been sitting here for a good few hours and they're very stale, and weirdly soggy from the high humidity. You died.",
 
     "button2-text": "Look for the elevator",
     "button2-link": "/look-for-elevator"
@@ -65,7 +65,7 @@
 
     "button2-text": "Look pal, I really can't help you right now. I'm just trying to get back to New Zealand, and if I have time, check out some sick temples on the way.",
     "button2-link": "/end",
-    "death-message": "The old lady is incensed with rage. Your blanant refusal to assist her is too much for her heart to bear. You both died."
+    "deathMessage": "The old lady is incensed with rage. Your blanant refusal to assist her is too much for her heart to bear. You both died."
   },
 
   {
@@ -90,7 +90,7 @@
     "button2-text": "Challenge him to a fight",
     "button2-link": "/fight",
 
-    "death-message": "Your ignorance of the layout of Bangkok, Thailand makes a poor impression on this stranger. He grimmaces and leaves you standing there feeling lost and confused. You died."
+    "deathMessage": "Your ignorance of the layout of Bangkok, Thailand makes a poor impression on this stranger. He grimmaces and leaves you standing there feeling lost and confused. You died."
   },
 
   {
@@ -103,7 +103,7 @@
     "button2-text": "Swing back",
     "button2-link": "/elevator-again",
 
-    "death-message": "In your stupor, your peace negotiation goes too far. You befriend both the scar-faced assailant, and the bar manager. You permanently re-settle in Thailand and never make it home. You died."
+    "deathMessage": "In your stupor, your peace negotiation goes too far. You befriend both the scar-faced assailant, and the bar manager. You permanently re-settle in Thailand and never make it home. You died."
   },
 
   {
@@ -116,7 +116,7 @@
     "button2-text": "Ground Floor",
     "button2-link": "/ground-floor",
 
-    "death-message": "The doors open to the speakeasy. The scar-faced stranger is not happy to see you again. You died."
+    "deathMessage": "The doors open to the speakeasy. The scar-faced stranger is not happy to see you again. You died."
   },
 
   {
@@ -129,7 +129,7 @@
     "button2-text": "Turn right",
     "button2-link": "/van",
 
-    "death-message": "You turn left and shuffle despondently down the street. A couple of police officers seem to recognise you, and for reasons unknown you are arrested. Passers-by applaud. You died."
+    "deathMessage": "You turn left and shuffle despondently down the street. A couple of police officers seem to recognise you, and for reasons unknown you are arrested. Passers-by applaud. You died."
   },
 
   {
@@ -142,7 +142,7 @@
     "button2-text": "Demand that the driver reveal themselves",
     "button2-link": "/win",
 
-    "death-message": "Jumping out of the van was clearly a bad idea. You died."
+    "deathMessage": "Jumping out of the van was clearly a bad idea. You died."
   },
 
   {

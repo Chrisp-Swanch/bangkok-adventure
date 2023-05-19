@@ -44,7 +44,7 @@ router.get('/end', (req, res) => {
     image: '/images/end.png',
     text: deathMessage,
   }
-  res.render('game', obj)
+  res.render('end', obj)
 })
 
 router.get('/call-mum', (req, res) => {
