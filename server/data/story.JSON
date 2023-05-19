@@ -46,7 +46,7 @@
   },
   {
     "id": "/shower",
-    "image": "/images/hotel-room",
+    "image": "/images/hotel-room.jpeg",
     "text": "You have a very pleasant and much-needed shower. After filling your pockets with the free soaps, you leave the bathroom and are met with a chaotic scene. The room is trashed, but your eyes are drawn to a bowl of chips on the coffee table.   Hunger gnaws, and you consider snacking on these before continuting on your quest. What do you do?",
     "button1-text": "Eat the leftover chips",
     "button1-link": "/end",
