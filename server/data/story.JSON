@@ -150,7 +150,8 @@
     "image": "/images/mum.jpeg", 
     "text": "The driver turns and unmasks themself. To your amazement, it is your Mum. She explains that she's come to pick you up and take you back home to sober up.   She goes on to say that you are a wanted criminal in Thailand due to your drunken antics, hence the discreet kidnap-style rescue, but that she still loves you despite your unspeakable crimes. One of her hired henchmen hands you a biscuit.   Congratulations, you win!",
     "button1-text": "Restart",
-    "button1-link": "/"
+    "button1-link": "/",
+    "rapName": ""
   }
   
   ]

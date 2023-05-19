@@ -227,6 +227,8 @@ router.get('/van', (req, res) => {
     })
 })
 
+
+
 router.get('/win', (req, res) => {
   const string = req.route.path
 
@@ -241,8 +243,27 @@ router.get('/win', (req, res) => {
     })
     .then((page) => {
       deathMessage = page.deathMessage
+      page.rapName = genName()
       res.render('win', page)
     })
 })
 
 module.exports = router
+
+
+
+
+function genName() {
+rapNameIndex = ['Lil', 'Big', 'Malone', 'Tha 3rd', 'Ruby', 'Beats', 'DJ', 'MC', 'Binky', 'Chainz', 'Shot', 'Sipper', 'Shot', 'Bokkie', 'Chunky', 'Twitchin', 'Dope', 'New Skool', 'Worm', 'Dougie', 'Thug', 'Ragz', "Dookie", 'Saggy', 'Dawg', 'Mane', 'Sleezy', 'Gucci',]
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+
+rapNameGen = rapNameIndex[getRandomInt(rapNameIndex.length)] + ' ' + rapNameIndex[getRandomInt(rapNameIndex.length)] + ' ' + rapNameIndex[getRandomInt(rapNameIndex.length)]
+return rapNameGen
+}
+
+
+
