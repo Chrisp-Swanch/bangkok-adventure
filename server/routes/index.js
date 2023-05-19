@@ -2,6 +2,13 @@ const express = require('express')
 const router = express.Router()
 const fs = require('fs').promises
 
+
+// let death = []
+// 
+// function ifNotEnd(route){
+  // if (route != "/end")
+// }
+// 
 router.get('/', (req, res) => {
   res.render('home')
 })
