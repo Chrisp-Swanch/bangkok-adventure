@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router()
 const fs = require('fs').promises
 
-
 router.get('/', (req, res) => {
   res.render('home')
 })
@@ -24,28 +23,26 @@ router.get('/game', (req, res) => {
       return JSON.parse(storyString)
     })
     .then((storyObj) => {
-      res.render('game', storyObj)
+      const obj = storyObj.story[1]
+      res.render('game', obj)
     })
 })
 
+// router.post('/game', (req, res) => {
+//   const buttonClicked = req.body.SOMETHING
 
-router.post('/game', (req, res) => {
-  const buttonClicked = req.body.SOMETHING
+//   fs.readFile(__dirname + '/data/story.JSON')
+//     .then((storyString) => {
+//       return JSON.parse(storyString)
+//     })
+//     .then((storyObj) => {
+//       for (scenario in storyObj) {
 
-  fs.readFile(__dirname + '/data/story.JSON')
-    .then((storyString) => {
-      return JSON.parse(storyString)
-    })
-    .then((storyObj) => {
-      for (scenario in storyObj) {
-        
-      }
-    })
-  
-})
+//       }
+//     })
 
-router.get('result', (req, res) => {
+// })
 
-})
+router.get('result', (req, res) => {})
 
 module.exports = router
