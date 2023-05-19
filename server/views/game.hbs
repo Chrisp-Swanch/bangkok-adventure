@@ -1,26 +1,11 @@
+<div class="container">
 <img class="story-image"src="{{image}}"/>
 <p>{{text}}</p>
 
-<form action="{{button2-link}}">
+<form action="{{button1-link}}">
   <button class="button">{{button1-text}}</a>
 </form>
 <form action="{{button2-link}}">
   <button class="button">{{button2-text}}</a>
 </form>
-
-{{!-- function goToPage(string) {
-  router.get(string, (req, res) => {
-    fs.readFile('server/data/story.JSON')
-      .then((storyString) => {
-        return JSON.parse(storyString)
-      })
-      .then((storyObj) => {
-        return storyObj.story.find((page) => {
-          page.id == string
-        })
-      })
-      .then((page) => {
-        console.log(page)
-      })
-  })
-} --}}
+</div>

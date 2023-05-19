@@ -28,26 +28,45 @@ router.get('/game', (req, res) => {
     })
 })
 
-// router.post('/game', (req, res) => {
-//   const buttonClicked = req.body.SOMETHING
-
-//   fs.readFile(__dirname + '/data/story.JSON')
-//     .then((storyString) => {
-//       return JSON.parse(storyString)
-//     })
-//     .then((storyObj) => {
-//       for (scenario in storyObj) {
-
-//       }
-//     })
-
-// })
-
+// game page routes
 router.get('/call-mum', (req, res) => {
-  res.send('Hi Mum')
   console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
 })
 
-router.get('result', (req, res) => {})
+router.get('/drink-water', (req, res) => {
+  console.log(req.route.path)
+
+  const string = req.route.path
+
+  fs.readFile('server/data/story.JSON')
+    .then((storyString) => {
+      return JSON.parse(storyString)
+    })
+    .then((storyObj) => {
+      return storyObj.story.find((page) => {
+        return page.id == string
+      })
+    })
+    .then((page) => {
+      console.log(page)
+      res.render('game', page)
+    })
+})
 
 module.exports = router
