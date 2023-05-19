@@ -241,7 +241,7 @@ router.get('/win', (req, res) => {
     })
     .then((page) => {
       deathMessage = page.deathMessage
-      res.render('game', page)
+      res.render('win', page)
     })
 })
 
