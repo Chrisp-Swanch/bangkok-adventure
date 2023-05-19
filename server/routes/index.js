@@ -35,30 +35,19 @@ router.get('/game', (req, res) => {
     })
 })
 
+let deathMessage = ''
+
 // game page routes
 router.get('/end', (req, res) => {
-  console.log(req.route.path)
-
-  const string = req.route.path
-
-  fs.readFile('server/data/story.JSON')
-    .then((storyString) => {
-      return JSON.parse(storyString)
-    })
-    .then((storyObj) => {
-      return storyObj.story.find((page) => {
-        return page.id == string
-      })
-    })
-    .then((page) => {
-      console.log(page)
-      res.render('end', page)
-    })
+  const obj = {
+    id: '/end',
+    image: '/images/end.png',
+    text: deathMessage,
+  }
+  res.render('game', obj)
 })
 
 router.get('/call-mum', (req, res) => {
-  console.log(req.route.path)
-
   const string = req.route.path
 
   fs.readFile('server/data/story.JSON')
@@ -71,14 +60,12 @@ router.get('/call-mum', (req, res) => {
       })
     })
     .then((page) => {
-      console.log(page)
+      deathMessage = page.deathMessage
       res.render('game', page)
     })
 })
 
 router.get('/drink-water', (req, res) => {
-  console.log(req.route.path)
-
   const string = req.route.path
 
   fs.readFile('server/data/story.JSON')
@@ -91,14 +78,12 @@ router.get('/drink-water', (req, res) => {
       })
     })
     .then((page) => {
-      console.log(page)
+      deathMessage = page.deathMessage
       res.render('game', page)
     })
 })
 
 router.get('/shower', (req, res) => {
-  console.log(req.route.path)
-
   const string = req.route.path
 
   fs.readFile('server/data/story.JSON')
@@ -111,14 +96,12 @@ router.get('/shower', (req, res) => {
       })
     })
     .then((page) => {
-      console.log(page)
+      deathMessage = page.deathMessage
       res.render('game', page)
     })
 })
 
 router.get('/look-for-elevator', (req, res) => {
-  console.log(req.route.path)
-
   const string = req.route.path
 
   fs.readFile('server/data/story.JSON')
@@ -131,14 +114,12 @@ router.get('/look-for-elevator', (req, res) => {
       })
     })
     .then((page) => {
-      console.log(page)
+      deathMessage = page.deathMessage
       res.render('game', page)
     })
 })
 
 router.get('/elevator', (req, res) => {
-  console.log(req.route.path)
-
   const string = req.route.path
 
   fs.readFile('server/data/story.JSON')
@@ -151,14 +132,12 @@ router.get('/elevator', (req, res) => {
       })
     })
     .then((page) => {
-      console.log(page)
+      deathMessage = page.deathMessage
       res.render('game', page)
     })
 })
 
 router.get('/basement', (req, res) => {
-  console.log(req.route.path)
-
   const string = req.route.path
 
   fs.readFile('server/data/story.JSON')
@@ -171,14 +150,12 @@ router.get('/basement', (req, res) => {
       })
     })
     .then((page) => {
-      console.log(page)
+      deathMessage = page.deathMessage
       res.render('game', page)
     })
 })
 
 router.get('/fight', (req, res) => {
-  console.log(req.route.path)
-
   const string = req.route.path
 
   fs.readFile('server/data/story.JSON')
@@ -191,14 +168,12 @@ router.get('/fight', (req, res) => {
       })
     })
     .then((page) => {
-      console.log(page)
+      deathMessage = page.deathMessage
       res.render('game', page)
     })
 })
 
 router.get('/elevator-again', (req, res) => {
-  console.log(req.route.path)
-
   const string = req.route.path
 
   fs.readFile('server/data/story.JSON')
@@ -211,14 +186,12 @@ router.get('/elevator-again', (req, res) => {
       })
     })
     .then((page) => {
-      console.log(page)
+      deathMessage = page.deathMessage
       res.render('game', page)
     })
 })
 
 router.get('/ground-floor', (req, res) => {
-  console.log(req.route.path)
-
   const string = req.route.path
 
   fs.readFile('server/data/story.JSON')
@@ -231,14 +204,12 @@ router.get('/ground-floor', (req, res) => {
       })
     })
     .then((page) => {
-      console.log(page)
+      deathMessage = page.deathMessage
       res.render('game', page)
     })
 })
 
 router.get('/van', (req, res) => {
-  console.log(req.route.path)
-
   const string = req.route.path
 
   fs.readFile('server/data/story.JSON')
@@ -251,14 +222,12 @@ router.get('/van', (req, res) => {
       })
     })
     .then((page) => {
-      console.log(page)
+      deathMessage = page.deathMessage
       res.render('game', page)
     })
 })
 
 router.get('/win', (req, res) => {
-  console.log(req.route.path)
-
   const string = req.route.path
 
   fs.readFile('server/data/story.JSON')
@@ -271,7 +240,7 @@ router.get('/win', (req, res) => {
       })
     })
     .then((page) => {
-      console.log(page)
+      deathMessage = page.deathMessage
       res.render('game', page)
     })
 })
