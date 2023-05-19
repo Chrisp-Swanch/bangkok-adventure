@@ -43,6 +43,11 @@ router.get('/game', (req, res) => {
 
 // })
 
+router.get('/call-mum', (req, res) => {
+  res.send('Hi Mum')
+  console.log(req.route.path)
+})
+
 router.get('result', (req, res) => {})
 
 module.exports = router

@@ -14,17 +14,11 @@
     "id": "/",
     "image": "/images/bangkok.png",
     "text": "You awaken to the sound of a dripping tap. Your head is pounding from what you can only assume was a night of heavy drinking, though the last thing you remember was walking towards JJ Murphy's after class on Friday.Your heavy eyes open, and fill with the stinging light streaming from a nearby window. But what's this? This is not a room you recognise. In place of a soft mattress is the cold hotel bathroom floor you passed out on. You stumble towards the window and see the vast city of Bangkok, Thailand, stretching out beyond the horizon. Confusion and panic sets in. You feel nauseous. What do you do?",
-    "button1": 
-      {
-        "buttonText": "Call Mum",
-        "toRoute": "/call-mum"
-      },
-    "button2":
-      {
-        "buttonText": "Drink some water from the tap",
-        "toRoute": "/drink-water"
-      }
-    
+    "button1-text": "Call Mum",
+    "button1-link": "/call-mum",
+
+    "button2-text": "Drink some water from the tap",
+    "button2-link": "/drink-water"
   },
   {
     "id": "/call-mum",
